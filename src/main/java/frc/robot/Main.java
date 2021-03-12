@@ -19,9 +19,8 @@ public final class Main {
    *
    * <p>If you change your main robot class, change the parameter type.
    */
-  public static void main(String... args) {
+  public static void main(String[] args) {
     //starts a robot base using an instance of r and sets left drive to PWM0 and right drive to PWM1
-    //RobotBase.startRobot(() -> new r(0,1));
-    RobotBase.startRobot(Robot::new);
+    RobotBase.startRobot(() -> new tankRobo(1,2));
   }
 }

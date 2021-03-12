@@ -15,8 +15,7 @@ public class tankRobo extends TimedRobot{
     Joystick j = new Joystick(0);
 
     //varaible declarations
-    int lID;
-    int rID;
+    int lID, rID;       //ID of CAN motor controllers
 
     /*
     * @param lID: CAN ID of left motor  (set in the firmware)
@@ -30,7 +29,6 @@ public class tankRobo extends TimedRobot{
 
     @Override
     public void teleopInit(){
-        if(robo == null)return;
         
     }
 
